@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="print_selected_items">print selected items</string>
+    <string name="search">Search</string>
+    <string name="no_matches">No Matches</string>
+    <string name="todo">TODO</string>
+
+    <array name="name_list">
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item>  Oak(admin) </item>
+        <item>  admin  </item>
+        <item>  Oak(admin) </item>
+        <item> Prof. (admin) </item>
+        <item> user </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+        <item> Prof.Oak(admin) </item>
+
+
+
+    </array>
+
+
+</resources>
