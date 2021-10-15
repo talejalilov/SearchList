@@ -5,23 +5,23 @@ import androidx.appcompat.widget.SearchView;
 
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
-import android.widget.Adapter;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.Toast;
 
 import com.example.lab4.databinding.ActivityMainBinding;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+
 
 public class MainActivity extends AppCompatActivity  {
 
     ActivityMainBinding  binding;
     ArrayAdapter<String> adapter;
     String[] nameList ;
-
+    String[] positionList;
 
 
     @Override
@@ -33,9 +33,12 @@ public class MainActivity extends AppCompatActivity  {
         //I write names in res/values/strings.xml in there I create array and input name in here and then call
         Resources resources = getResources();
         nameList = resources.getStringArray(R.array.name_list);
+        positionList = resources.getStringArray(R.array.position);
+
+
 
         //simple_list_item_multiple_choice -- this is ready code, this code create us checkbox view
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_multiple_choice, nameList);
+        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_multiple_choice,nameList);
         binding.listview.setAdapter(adapter);
 
         //Click listview and getPosition show on Toast message
@@ -56,15 +59,22 @@ public class MainActivity extends AppCompatActivity  {
         binding.searchBar.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                MainActivity.this.adapter.getFilter().filter(query);
-                return false;
+                return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                if(adapter.isEmpty()){
+                    binding.listview.setVisibility(View.INVISIBLE);
+                    binding.noRecords.setVisibility(View.VISIBLE);
+                }
+                else {
+                    binding.listview.setVisibility(View.VISIBLE);
+                    binding.noRecords.setVisibility(View.INVISIBLE);
+                }
                 adapter.getFilter().filter(newText);
-                MainActivity.this.adapter.getFilter().filter(newText);
-                return false;
+
+                return true;
             }
         });
 

@@ -6,26 +6,41 @@
     <string name="todo">TODO</string>
 
     <array name="name_list">
-        <item> Prof.Oak(admin) </item>
-        <item> Prof.Oak(admin) </item>
-        <item>  Oak(admin) </item>
+        <item> Prof.Oak   </item>
+        <item> Prof.Oak  </item>
+        <item>  Oak  </item>
         <item>  admin  </item>
-        <item>  Oak(admin) </item>
-        <item> Prof. (admin) </item>
+        <item>  Oak  </item>
+        <item> Prof.  </item>
         <item> user </item>
+        <item> Prof.Oak  </item>
+        <item> Prof.Oak  </item>
+        <item> Prof.Oak  </item>
+        <item> Prof.Oak  </item>
+        <item> Prof.Oak </item>
+        <item> Prof.Oak </item>
         <item> Prof.Oak(admin) </item>
         <item> Prof.Oak(admin) </item>
         <item> Prof.Oak(admin) </item>
-        <item> Prof.Oak(admin) </item>
-        <item> Prof.Oak(admin) </item>
-        <item> Prof.Oak(admin) </item>
-        <item> Prof.Oak(admin) </item>
-        <item> Prof.Oak(admin) </item>
-        <item> Prof.Oak(admin) </item>
-
-
-
     </array>
 
+    <array name="position">
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item>  (admin) </item>
+        <item>  admin  </item>
+        <item>  (admin) </item>
+        <item>  (admin) </item>
+        <item> user </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+        <item> (admin) </item>
+    </array>
 
 </resources>

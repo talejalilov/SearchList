@@ -50,9 +50,25 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:choiceMode="multipleChoice"
+        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintTop_toBottomOf="@+id/search_bar"
-        app:layout_constraintVertical_bias="0.060000002" />
+        app:layout_constraintVertical_bias="0.060000002" >
+
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/noRecords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23sp"
+        android:text="No Records Found"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
