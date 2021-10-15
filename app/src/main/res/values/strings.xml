@@ -24,23 +24,6 @@
         <item> Prof.Oak(admin) </item>
     </array>
 
-    <array name="position">
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item>  (admin) </item>
-        <item>  admin  </item>
-        <item>  (admin) </item>
-        <item>  (admin) </item>
-        <item> user </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-        <item> (admin) </item>
-    </array>
+
 
 </resources>
